@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o"
+  "CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o.d"
+  "CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o"
+  "CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o.d"
+  "CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o"
+  "CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o.d"
   "CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o"
   "CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o.d"
   "CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o"

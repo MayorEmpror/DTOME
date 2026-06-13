@@ -187,6 +187,78 @@ DTOME/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DTOME.dir/build.make CMakeFiles/DTOME.dir/build
 .PHONY : DTOME/fast
 
+Components/DB/DBConnection.o: Components/DB/DBConnection.cpp.o
+.PHONY : Components/DB/DBConnection.o
+
+# target to build an object file
+Components/DB/DBConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o
+.PHONY : Components/DB/DBConnection.cpp.o
+
+Components/DB/DBConnection.i: Components/DB/DBConnection.cpp.i
+.PHONY : Components/DB/DBConnection.i
+
+# target to preprocess a source file
+Components/DB/DBConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.i
+.PHONY : Components/DB/DBConnection.cpp.i
+
+Components/DB/DBConnection.s: Components/DB/DBConnection.cpp.s
+.PHONY : Components/DB/DBConnection.s
+
+# target to generate assembly for a file
+Components/DB/DBConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.s
+.PHONY : Components/DB/DBConnection.cpp.s
+
+Components/DB/OrderRepository.o: Components/DB/OrderRepository.cpp.o
+.PHONY : Components/DB/OrderRepository.o
+
+# target to build an object file
+Components/DB/OrderRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o
+.PHONY : Components/DB/OrderRepository.cpp.o
+
+Components/DB/OrderRepository.i: Components/DB/OrderRepository.cpp.i
+.PHONY : Components/DB/OrderRepository.i
+
+# target to preprocess a source file
+Components/DB/OrderRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.i
+.PHONY : Components/DB/OrderRepository.cpp.i
+
+Components/DB/OrderRepository.s: Components/DB/OrderRepository.cpp.s
+.PHONY : Components/DB/OrderRepository.s
+
+# target to generate assembly for a file
+Components/DB/OrderRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.s
+.PHONY : Components/DB/OrderRepository.cpp.s
+
+Components/DB/TradeRepository.o: Components/DB/TradeRepository.cpp.o
+.PHONY : Components/DB/TradeRepository.o
+
+# target to build an object file
+Components/DB/TradeRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o
+.PHONY : Components/DB/TradeRepository.cpp.o
+
+Components/DB/TradeRepository.i: Components/DB/TradeRepository.cpp.i
+.PHONY : Components/DB/TradeRepository.i
+
+# target to preprocess a source file
+Components/DB/TradeRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.i
+.PHONY : Components/DB/TradeRepository.cpp.i
+
+Components/DB/TradeRepository.s: Components/DB/TradeRepository.cpp.s
+.PHONY : Components/DB/TradeRepository.s
+
+# target to generate assembly for a file
+Components/DB/TradeRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dtome_core.dir/build.make CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.s
+.PHONY : Components/DB/TradeRepository.cpp.s
+
 Components/Exchange/Exchange.o: Components/Exchange/Exchange.cpp.o
 .PHONY : Components/Exchange/Exchange.o
 
@@ -393,6 +465,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DTOME"
 	@echo "... dtome_core"
+	@echo "... Components/DB/DBConnection.o"
+	@echo "... Components/DB/DBConnection.i"
+	@echo "... Components/DB/DBConnection.s"
+	@echo "... Components/DB/OrderRepository.o"
+	@echo "... Components/DB/OrderRepository.i"
+	@echo "... Components/DB/OrderRepository.s"
+	@echo "... Components/DB/TradeRepository.o"
+	@echo "... Components/DB/TradeRepository.i"
+	@echo "... Components/DB/TradeRepository.s"
 	@echo "... Components/Exchange/Exchange.o"
 	@echo "... Components/Exchange/Exchange.i"
 	@echo "... Components/Exchange/Exchange.s"

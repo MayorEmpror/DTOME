@@ -69,10 +69,52 @@ include CMakeFiles/dtome_core.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/dtome_core.dir/flags.make
 
+CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o: CMakeFiles/dtome_core.dir/flags.make
+CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o: /home/hashir/codebases/DTOME/Components/DB/DBConnection.cpp
+CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o -MF CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o -c /home/hashir/codebases/DTOME/Components/DB/DBConnection.cpp
+
+CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hashir/codebases/DTOME/Components/DB/DBConnection.cpp > CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.i
+
+CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hashir/codebases/DTOME/Components/DB/DBConnection.cpp -o CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.s
+
+CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o: CMakeFiles/dtome_core.dir/flags.make
+CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o: /home/hashir/codebases/DTOME/Components/DB/OrderRepository.cpp
+CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o -MF CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o -c /home/hashir/codebases/DTOME/Components/DB/OrderRepository.cpp
+
+CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hashir/codebases/DTOME/Components/DB/OrderRepository.cpp > CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.i
+
+CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hashir/codebases/DTOME/Components/DB/OrderRepository.cpp -o CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.s
+
+CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o: CMakeFiles/dtome_core.dir/flags.make
+CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o: /home/hashir/codebases/DTOME/Components/DB/TradeRepository.cpp
+CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o -MF CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o -c /home/hashir/codebases/DTOME/Components/DB/TradeRepository.cpp
+
+CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hashir/codebases/DTOME/Components/DB/TradeRepository.cpp > CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.i
+
+CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hashir/codebases/DTOME/Components/DB/TradeRepository.cpp -o CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.s
+
 CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o: /home/hashir/codebases/DTOME/Components/Exchange/Exchange.cpp
 CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o -MF CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o -c /home/hashir/codebases/DTOME/Components/Exchange/Exchange.cpp
 
 CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.i: cmake_force
@@ -86,7 +128,7 @@ CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.s: cmake_force
 CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o: /home/hashir/codebases/DTOME/Components/Market/Market.cpp
 CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o -MF CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o -c /home/hashir/codebases/DTOME/Components/Market/Market.cpp
 
 CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.i: cmake_force
@@ -100,7 +142,7 @@ CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.s: cmake_force
 CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o: /home/hashir/codebases/DTOME/Components/MatchingEngine/MatchingEngine.cpp
 CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o -MF CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o -c /home/hashir/codebases/DTOME/Components/MatchingEngine/MatchingEngine.cpp
 
 CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.i: cmake_force
@@ -114,7 +156,7 @@ CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.s: cmake_
 CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o: /home/hashir/codebases/DTOME/Components/Order/Order.cpp
 CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o -MF CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.o -c /home/hashir/codebases/DTOME/Components/Order/Order.cpp
 
 CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/dtome_core.dir/Components/Order/Order.cpp.s: cmake_force
 CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o: /home/hashir/codebases/DTOME/Components/OrderBook/OrderBook.cpp
 CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o -MF CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.o -c /home/hashir/codebases/DTOME/Components/OrderBook/OrderBook.cpp
 
 CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/dtome_core.dir/Components/OrderBook/OrderBook.cpp.s: cmake_force
 CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o: /home/hashir/codebases/DTOME/Components/OrderQueue/OrderQueue.cpp
 CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o -MF CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.o -c /home/hashir/codebases/DTOME/Components/OrderQueue/OrderQueue.cpp
 
 CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.s: cmake_force
 CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o: CMakeFiles/dtome_core.dir/flags.make
 CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o: /home/hashir/codebases/DTOME/Components/Trade/Trade.cpp
 CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o: CMakeFiles/dtome_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o -MF CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o.d -o CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o -c /home/hashir/codebases/DTOME/Components/Trade/Trade.cpp
 
 CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.i: cmake_force
@@ -169,6 +211,9 @@ CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.s: cmake_force
 
 # Object files for target dtome_core
 dtome_core_OBJECTS = \
+"CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o" \
+"CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o" \
+"CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o" \
 "CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o" \
 "CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o" \
 "CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o" \
@@ -180,6 +225,9 @@ dtome_core_OBJECTS = \
 # External object files for target dtome_core
 dtome_core_EXTERNAL_OBJECTS =
 
+libdtome_core.a: CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o
+libdtome_core.a: CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o
+libdtome_core.a: CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o
 libdtome_core.a: CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o
 libdtome_core.a: CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o
 libdtome_core.a: CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o
@@ -189,7 +237,7 @@ libdtome_core.a: CMakeFiles/dtome_core.dir/Components/OrderQueue/OrderQueue.cpp.
 libdtome_core.a: CMakeFiles/dtome_core.dir/Components/Trade/Trade.cpp.o
 libdtome_core.a: CMakeFiles/dtome_core.dir/build.make
 libdtome_core.a: CMakeFiles/dtome_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libdtome_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libdtome_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dtome_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dtome_core.dir/link.txt --verbose=$(VERBOSE)
 

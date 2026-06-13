@@ -43,6 +43,27 @@ info()    { echo -e "${CYAN}[build]${RESET} $*"; }
 success() { echo -e "${GREEN}[build]${RESET} $*"; }
 error()   { echo -e "${RED}[build]${RESET} $*" >&2; }
 
+# ─── Load .env ───────────────────────────────────────────────────────────────
+ENV_FILE="$PROJECT_ROOT/.env"
+if [[ -f "$ENV_FILE" ]]; then
+    info "Loading environment from .env..."
+    set -a
+    # shellcheck disable=SC1090
+    source "$ENV_FILE"
+    set +a
+else
+    error ".env file not found at $ENV_FILE"
+    error "Create it with: echo 'DTOME_DB_URL=postgresql://...' > .env"
+    exit 1
+fi
+
+# ─── Validate required env vars ──────────────────────────────────────────────
+if [[ -z "${DTOME_DB_URL:-}" ]]; then
+    error "DTOME_DB_URL is not set in .env"
+    exit 1
+fi
+info "DB URL       : ${DTOME_DB_URL:0:40}..."   # print first 40 chars only
+
 # ─── Check cmake is available ────────────────────────────────────────────────
 if ! command -v cmake &>/dev/null; then
     error "cmake not found. Install with: sudo apt install cmake"

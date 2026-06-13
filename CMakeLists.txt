@@ -33,16 +33,17 @@ endif()
 
 # ─── Source discovery ────────────────────────────────────────────────────────
 #
-#   Expected layout inside Components/:
-#
-#     Components/
-#       Exchange/          Exchange.h  Exchange.cpp
-#       Market/            Market.h    Market.cpp
-#       MatchingEngine/    MatchingEngine.h  MatchingEngine.cpp
-#       OrderBook/         OrderBook.h  OrderBook.cpp  PriceLevel.h
-#       Order/             Order.h     Order.cpp
-#       OrderQueue/        OrderQueue.h  OrderQueue.cpp
-#       Trade/             Trade.h     Trade.cpp
+#   Components/
+#     Exchange/          Exchange.h  Exchange.cpp
+#     Market/            Market.h    Market.cpp
+#     MatchingEngine/    MatchingEngine.h  MatchingEngine.cpp
+#     OrderBook/         OrderBook.h  OrderBook.cpp  PriceLevel.h
+#     Order/             Order.h     Order.cpp
+#     OrderQueue/        OrderQueue.h  OrderQueue.cpp
+#     Trade/             Trade.h     Trade.cpp
+#     DB/                DBConnection.h  DBConnection.cpp
+#                        OrderRepository.h  OrderRepository.cpp
+#                        TradeRepository.h  TradeRepository.cpp
 #
 file(GLOB_RECURSE DTOME_SOURCES
     "${CMAKE_SOURCE_DIR}/Components/*.cpp"
@@ -53,9 +54,6 @@ file(GLOB_RECURSE DTOME_HEADERS
 )
 
 # ─── Core library ────────────────────────────────────────────────────────────
-#   Built as a static lib so both the main binary and the test binary
-#   link against the same compiled objects without re-compiling.
-#
 add_library(dtome_core STATIC ${DTOME_SOURCES})
 
 target_include_directories(dtome_core
@@ -67,6 +65,7 @@ target_include_directories(dtome_core
         "${CMAKE_SOURCE_DIR}/Components/Order"
         "${CMAKE_SOURCE_DIR}/Components/OrderQueue"
         "${CMAKE_SOURCE_DIR}/Components/Trade"
+        "${CMAKE_SOURCE_DIR}/Components/DB"
 )
 
 target_compile_options(dtome_core PRIVATE ${DTOME_COMPILE_OPTIONS})
@@ -75,20 +74,25 @@ if(DEFINED DTOME_LINK_OPTIONS)
     target_link_options(dtome_core PUBLIC ${DTOME_LINK_OPTIONS})
 endif()
 
-# Pthreads — required for std::mutex / std::condition_variable on Linux
+# ─── Threads ─────────────────────────────────────────────────────────────────
 find_package(Threads REQUIRED)
 target_link_libraries(dtome_core PUBLIC Threads::Threads)
 
-# ─── Main test binary ────────────────────────────────────────────────────────
+# ─── PostgreSQL + libpqxx ────────────────────────────────────────────────────
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(PQXX REQUIRED IMPORTED_TARGET libpqxx)
+
+message(STATUS "libpqxx     : ${PQXX_VERSION}")
+
+target_link_libraries(dtome_core PUBLIC PkgConfig::PQXX pqxx pq)
+
+# ─── Main binary ─────────────────────────────────────────────────────────────
 add_executable(DTOME "${CMAKE_SOURCE_DIR}/test.cpp")
+target_include_directories(DTOME PRIVATE "${CMAKE_SOURCE_DIR}/Components/DB")
 target_link_libraries(DTOME PRIVATE dtome_core)
 target_compile_options(DTOME PRIVATE ${DTOME_COMPILE_OPTIONS})
 
-# ─── Unit tests (optional — only built if tests/ directory exists) ───────────
-#
-#   Drop any *_test.cpp file under tests/ and it will be picked up
-#   automatically.  Each file becomes its own CTest test case.
-#
+# ─── Unit tests (optional) ───────────────────────────────────────────────────
 if(EXISTS "${CMAKE_SOURCE_DIR}/tests")
     enable_testing()
     file(GLOB TEST_SOURCES "${CMAKE_SOURCE_DIR}/tests/*_test.cpp")
@@ -104,7 +108,7 @@ else()
     message(STATUS "Tests      : none (create tests/ to enable)")
 endif()
 
-# ─── Install rules (optional) ────────────────────────────────────────────────
+# ─── Install rules ───────────────────────────────────────────────────────────
 install(TARGETS DTOME DESTINATION bin)
 install(TARGETS dtome_core
     ARCHIVE DESTINATION lib
@@ -112,5 +116,5 @@ install(TARGETS dtome_core
 )
 install(FILES ${DTOME_HEADERS} DESTINATION include/dtome)
 
-# ─── Print summary ───────────────────────────────────────────────────────────
+# ─── Summary ─────────────────────────────────────────────────────────────────
 message(STATUS "Sources    : ${DTOME_SOURCES}")

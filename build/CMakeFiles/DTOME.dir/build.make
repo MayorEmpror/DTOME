@@ -93,6 +93,7 @@ DTOME_EXTERNAL_OBJECTS =
 DTOME: CMakeFiles/DTOME.dir/test.cpp.o
 DTOME: CMakeFiles/DTOME.dir/build.make
 DTOME: libdtome_core.a
+DTOME: /usr/lib/x86_64-linux-gnu/libpqxx.so
 DTOME: CMakeFiles/DTOME.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hashir/codebases/DTOME/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DTOME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DTOME.dir/link.txt --verbose=$(VERBOSE)

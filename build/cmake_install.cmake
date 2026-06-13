@@ -68,6 +68,9 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dtome" TYPE FILE FILES
+    "/home/hashir/codebases/DTOME/Components/DB/DBConnection.h"
+    "/home/hashir/codebases/DTOME/Components/DB/OrderRepository.h"
+    "/home/hashir/codebases/DTOME/Components/DB/TradeRepository.h"
     "/home/hashir/codebases/DTOME/Components/Exchange/Exchange.h"
     "/home/hashir/codebases/DTOME/Components/Market/Market.h"
     "/home/hashir/codebases/DTOME/Components/MatchingEngine/MatchingEngine.h"

@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/hashir/codebases/DTOME/Components/DB/DBConnection.cpp" "CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/DB/DBConnection.cpp.o.d"
+  "/home/hashir/codebases/DTOME/Components/DB/OrderRepository.cpp" "CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/DB/OrderRepository.cpp.o.d"
+  "/home/hashir/codebases/DTOME/Components/DB/TradeRepository.cpp" "CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/DB/TradeRepository.cpp.o.d"
   "/home/hashir/codebases/DTOME/Components/Exchange/Exchange.cpp" "CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/Exchange/Exchange.cpp.o.d"
   "/home/hashir/codebases/DTOME/Components/Market/Market.cpp" "CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/Market/Market.cpp.o.d"
   "/home/hashir/codebases/DTOME/Components/MatchingEngine/MatchingEngine.cpp" "CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o" "gcc" "CMakeFiles/dtome_core.dir/Components/MatchingEngine/MatchingEngine.cpp.o.d"
