@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -fsanitize=address,undefined CMakeFiles/DTOME.dir/test.cpp.o -o DTOME  libdtome_core.a 

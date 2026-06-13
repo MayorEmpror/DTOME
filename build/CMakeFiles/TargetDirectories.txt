@@ -1,0 +1,8 @@
+/home/hashir/codebases/DTOME/build/CMakeFiles/dtome_core.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/DTOME.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/edit_cache.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/rebuild_cache.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/list_install_components.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/install.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/install/local.dir
+/home/hashir/codebases/DTOME/build/CMakeFiles/install/strip.dir
