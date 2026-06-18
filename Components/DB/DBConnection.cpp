@@ -2,10 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 
-DBConnection::DBConnection()
-    : m_url(loadUrlFromEnv())
-    , m_conn(nullptr)
-{}
+DBConnection::DBConnection() : m_url(loadUrlFromEnv()), m_conn(nullptr){}
 
 std::string DBConnection::loadUrlFromEnv() const {
     const char* url = std::getenv("DTOME_DB_URL");

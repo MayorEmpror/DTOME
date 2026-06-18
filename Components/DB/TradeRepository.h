@@ -16,7 +16,7 @@ struct TradeRecord {
     int         quantity;
     long        timestamp;
 };
-
+    
 // ─── TradeRepository ──────────────────────────────────────────────────────────
 //  All DB operations for the trades table.
 //  insertTrade() is the only write path — trades are immutable once created.
